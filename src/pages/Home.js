@@ -12,7 +12,7 @@ const Home = () => {
                 <div className="home-title-box">
                     d
                 </div>
-                <Link to={'/page1'}>page1</Link>
+                <Link to={'/page1'}>page1</Link> 
                 <PC />
             </div>
         </div>
