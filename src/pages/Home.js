@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../style/Home.scss';
 import PC from '../components/PC.js';
+import Header from '../components/Header.js';
 
 const Home = () => {
     const [isConn, setIsConn] = useState();
@@ -9,10 +10,10 @@ const Home = () => {
     return (
         <div>
             <div className="home-wrap">
+                <Header />
                 <div className="home-title-box">
-                    d
+                    ds
                 </div>
-                <Link to={'/page1'}>page1</Link> 
                 <PC />
             </div>
         </div>

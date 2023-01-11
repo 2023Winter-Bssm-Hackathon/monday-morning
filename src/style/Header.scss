@@ -1,0 +1,15 @@
+.header-wrap {
+    // position:absolute;
+    width:100vw;
+    height:60px;
+    background-color: #4A9552;
+
+    ul {
+        display:flex;
+        list-style:none;
+
+        li {
+            margin:20px;
+        }
+    }
+}

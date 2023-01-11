@@ -1,8 +1,11 @@
 import React from 'react';
+import Header from '../components/Header.js';
 
 const Page1 = () => {
     return (
-        <div>Page1</div>
+        <div>
+            <Header />
+        </div>
     );
 }
 
