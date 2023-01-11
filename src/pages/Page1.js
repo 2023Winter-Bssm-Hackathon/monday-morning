@@ -1,7 +1,8 @@
-import { React, useEffect } from "react";
+import { React, useState, useEffect } from "react";
 import axios from "axios";
 
 const Page1 = () => {
+	const [weatherDatas, setWeatherDatas] = useState([]);
 	/** 날씨 API 가져오는 함수 하하 */
 	const getWeatherAPI = () => {
 		/** 인증키 */
@@ -24,14 +25,28 @@ const Page1 = () => {
 			const weather = weatherData.main;
 			/** 풍속 */
 			const wind = Math.round(windData.speed);
+
+			const datas = [celTemp, humidity, weather, wind];
+			updateWeatherInfo(datas);
 		});
+	};
+
+	const updateWeatherInfo = (datas) => {
+		setWeatherDatas(datas);
 	};
 
 	useEffect(() => {
 		getWeatherAPI();
 	});
 
-	return <div></div>;
+	return (
+		<div>
+			<div>기온 : {weatherDatas[0]}도</div>
+			<div>습도 : {weatherDatas[1]}%</div>
+			<div>오늘의 날씨 : {weatherDatas[2]}</div>
+			<div>풍속 : {weatherDatas[3]}m/s</div>
+		</div>
+	);
 };
 
 export default Page1;
