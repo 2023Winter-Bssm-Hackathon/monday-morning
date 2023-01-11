@@ -1,4 +1,5 @@
 import React from 'react';
+import '../style/PC.scss';
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -56,5 +57,9 @@ export const data = {
 };
 
 export default function PC() {
-  return <Line options={options} data={data}  style={{width:'1000px', height:'500px'}} />;
+  return (
+    <div className="pc-wrap">
+      <Line options={options} data={data} />
+    </div>
+  );
 }
