@@ -7,7 +7,7 @@ const Header = () => {
         <div>
             <div className="header-wrap">
                 <ul>
-                    <li><Link to={'/'} style={{textDecoration:'none'}}>홈</Link> </li>
+                    <li><Link to={'/'} style={{textDecoration:'none'}}><img src='../images/logo.png' alt='' /></Link></li>
                     <li><Link to={'/page1'} style={{textDecoration:'none'}}>기록</Link></li>
                 </ul>
             </div>

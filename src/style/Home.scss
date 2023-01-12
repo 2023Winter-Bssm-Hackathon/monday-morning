@@ -5,6 +5,34 @@
     position:absolute;
 
     .home-title-box {
-        background-color:#4A9552;
+        background-color:#86bf8b;
+    }
+
+    .home-weather-box {
+        margin: 50px auto;
+        width:700px;
+        height: 600px;
+        background-color: red;
+        border-radius:10px;
+
+        .home-weather-content-box {
+            width:90%;
+            height: 40%;
+            margin:0px auto;
+            padding-top:30px;
+
+            .daily-weather {
+                font-size:40px;
+                font-weight: 700;
+            }
+
+            .home-weather-contents {
+                margin-top:20px;
+
+                div {
+                    margin-bottom:20px;
+                }
+            }
+        }
     }
 }
